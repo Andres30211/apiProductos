@@ -1,14 +1,11 @@
 # Usa una imagen de base con Java preinstalado
-FROM openjdk:17-jdk-slim
-
-# Establece el directorio de trabajo dentro del contenedor
-WORKDIR /app
+FROM amazoncorretto:17-alpine-jdk
 
 # Copia el archivo JAR generado en el contenedor
-COPY target/api.productos.jin.andres-0.0.1-SNAPSHOT.jar app.jar
+COPY target/api.productos.jin.andres-0.0.1-SNAPSHOT.jar /api.jar
 
 # Expone el puerto en el que se ejecutará tu aplicación
 EXPOSE 8080
 
 # Comando para ejecutar la aplicación
-ENTRYPOINT ["java", "-jar", "api.productos.jin.andres-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "/api.jar"]
