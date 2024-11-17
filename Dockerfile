@@ -2,7 +2,7 @@
 FROM amazoncorretto:17-alpine-jdk
 
 # Copia el archivo JAR generado en el contenedor
-COPY target/api.productos.jin.andres-0.0.1-SNAPSHOT.jar /api.jar
+COPY jar/api.productos.jin.andres-0.0.1-SNAPSHOT.jar /api.jar
 
 # Expone el puerto en el que se ejecutará tu aplicación
 EXPOSE 8080
