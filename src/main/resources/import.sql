@@ -1,0 +1,2 @@
+insert into tbl_products(titulo,marca,color,descripcion,cantidad,valor) values('Celular','Apple','Gris','Es el ultimo que salio',3,6000000)
+insert into tbl_products(titulo,marca,color,descripcion,cantidad,valor) values('Silla','Comodisimos','Negra','Es una silla ergonomica',2,500000)

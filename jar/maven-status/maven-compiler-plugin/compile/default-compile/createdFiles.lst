@@ -1,2 +1,6 @@
+productos\dao\services\ProductService.class
 productos\Application.class
+productos\models\Products.class
+productos\dao\IProductDao.class
 productos\controller\ProductoRestController.class
+productos\dao\IProductService.class
