@@ -13,7 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@CrossOrigin(origins = {"http://localhost:5500"})
+@CrossOrigin(origins = {"http://localhost:5501"})
 @RestController
 @RequestMapping("/api")
 public class ProductoRestController {
