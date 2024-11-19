@@ -13,7 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@CrossOrigin(origins = "https://apiproductos-pbhp.onrender.com", maxAge = 3600)
+@CrossOrigin(origins = "https://127.0.0.1:5500", maxAge = 3600)
 @RestController
 @RequestMapping("/api")
 public class ProductoRestController {
