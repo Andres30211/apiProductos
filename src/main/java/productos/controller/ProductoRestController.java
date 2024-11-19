@@ -10,6 +10,7 @@ import productos.models.Products;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 
 
@@ -20,6 +21,7 @@ public class ProductoRestController {
 	@Autowired
 	private IProductService iProductService;
 
+	@CrossOrigin(origins = "https://apiproductos-pbhp.onrender.com")
 	@GetMapping("/lista")
 	public List<Products> lista() {
 		return this.iProductService.findAll();
